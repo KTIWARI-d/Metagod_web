@@ -1,0 +1,70 @@
+.temple-experiences {
+  padding: 20px;
+  background-color: #1f1b17; /* Dark background */
+}
+
+.temple-experiences h2 {
+  color: #d6af68; /* Gold color */
+  font-size: 28px; /* Bigger font size */
+  margin-bottom: 20px;
+}
+
+.experience-cards {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Ensure snapping when scrolling */
+  padding-bottom: 10px; /* Add some space at the bottom */
+}
+
+.experience-card {
+  flex: 0 0 25%; /* Show four cards at a time */
+  min-width: 300px; /* Minimum width for each card */
+  height: 400px; /* Increased height */
+  border-radius: 10px; /* Slightly rounded corners */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  scroll-snap-align: start; /* Align cards to the start */
+}
+
+.experience-card:hover {
+  transform: scale(1.05); /* Hover animation */
+}
+
+.experience-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.experience-overlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  font-size: 18px; /* Bigger font size */
+  padding: 10px 0;
+}
+
+.experience-title {
+  margin: 0;
+}
+
+/* Optional: Add scroll bar styling */
+.experience-cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.experience-cards::-webkit-scrollbar-thumb {
+  background: #d6af68; /* Gold color */
+  border-radius: 4px;
+}
+
+.experience-cards::-webkit-scrollbar-track {
+  background: #2a241f; /* Dark background */
+}

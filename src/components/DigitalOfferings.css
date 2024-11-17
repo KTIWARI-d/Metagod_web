@@ -1,0 +1,21 @@
+/* src/components/DigitalOfferings.css */
+.digital-offerings {
+  padding: 2rem;
+  text-align: center;
+}
+
+.offering-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.offering-card {
+  width: 300px;
+}
+
+.offering-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

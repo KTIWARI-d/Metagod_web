@@ -1,55 +1,89 @@
-/* src/components/HeroSection.css */
 .hero-section {
   position: relative;
-  text-align: center;
+  height: 80vh;
+  color: #fff;
+  padding-bottom: 20px; /* Added padding at the bottom */
 }
 
-.hero-image {
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px; /* Adjust size as needed */
+  z-index: 10;
+}
+
+.hero-icons {
+  position: absolute;
+  top: 20px;
+  right: 50px; /* Adjusted to move icons inward */
+  display: flex;
+  gap: 30px; /* Adjusted gap */
+  z-index: 10;
+}
+
+.icon {
+  width: 30px; /* Reduced size */
+  cursor: pointer;
+}
+
+.slide {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
   width: 100%;
-  height: 500px;
-  object-fit: cover;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
-}
-
-/* src/components/TempleExperiences.css */
-.temple-experiences {
-  padding: 2rem;
   text-align: center;
+  max-width: 800px;
+  padding: 20px;
 }
 
-.experience-cards {
+.hero-buttons {
   display: flex;
-  justify-content: space-around;
-  gap: 1rem;
+  gap: 15px;
+  justify-content: center;
 }
 
-.experience-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.primary-button,
+.secondary-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-/* src/components/DigitalOfferings.css */
-.digital-offerings {
-  padding: 2rem;
-  text-align: center;
+.primary-button {
+  background-color: #f0b90b;
+  color: #000;
 }
 
-.offering-cards {
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
+.secondary-button {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #f0b90b;
 }
 
-.offering-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.primary-button:hover {
+  background-color: #d9a30a;
+}
+
+.secondary-button:hover {
+  background-color: #f0b90b;
+  color: #fff;
 }

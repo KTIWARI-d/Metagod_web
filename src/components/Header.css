@@ -1,25 +1,44 @@
-/* src/components/Header.css */
-header {
+.custom-header {
+  background-color: #2a241f; /* Dark background similar to the image */
+  padding: 10px 20px;
+  border-bottom: 2px solid #1f1b17; /* Slight bottom border */
+}
+
+.header-nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #fff;
+  justify-content: center; /* Center the nav items */
 }
 
-.logo a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #000;
-}
-
-nav ul {
+.nav-links {
+  display: flex;
   list-style: none;
-  display: flex;
-  gap: 1rem;
+  gap: 30px; /* Space between the nav items */
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li a {
+.nav-item a {
   text-decoration: none;
-  color: #000;
+  color: #d6af68; /* Gold color for nav links */
+  font-weight: 500;
+  font-size: 14px; /* Adjust font size as needed */
+  padding: 5px 0;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #fff; /* White color on hover */
+}
+
+.nav-item.active a {
+  border-bottom: 2px solid #d6af68; /* Gold underline for active item */
+}
+
+.nav-item.live a {
+  color: #ff3b3b; /* Red color for live item */
+}
+
+.live-indicator {
+  color: #ff3b3b; /* Red indicator */
+  font-size: 14px;
 }

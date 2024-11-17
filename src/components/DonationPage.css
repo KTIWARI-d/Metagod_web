@@ -1,0 +1,73 @@
+.donation-page {
+  padding: 20px;
+  background-color: #1f1b17; /* Dark background */
+}
+
+.donation-header {
+  color: #d6af68; /* Gold color */
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.donation-cards {
+  display: flex;
+  justify-content: space-between; /* Space between the items */
+  gap: 30px; /* Space between cards */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding-bottom: 20px; /* Space for the scrollbar */
+  padding-right: 20px; /* Padding to shift the cards to the right */
+  width: 100%; /* Stretch the container to full width */
+}
+
+.donation-card {
+  flex: 0 0 140px; /* Width for each card */
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.donation-card:hover {
+  transform: translateY(-10px); /* Hover effect: move up */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.donation-image-container {
+  background-color: #d6af68; /* Gold circle background */
+  border-radius: 50%; /* Ensure a perfect circle */
+  padding: 15px; /* Space inside the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donation-image {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  object-fit: contain;
+}
+
+.donation-title {
+  margin-top: 15px; /* Increase spacing between image and title */
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.donation-card:hover .donation-title {
+  color: #d6af68; /* Change title color on hover */
+}
+
+/* Optional: Custom scrollbar styling */
+.donation-cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.donation-cards::-webkit-scrollbar-thumb {
+  background: #d6af68; /* Gold color */
+  border-radius: 4px;
+}
+
+.donation-cards::-webkit-scrollbar-track {
+  background: #2a241f; /* Dark background */
+}

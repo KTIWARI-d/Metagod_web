@@ -1,30 +1,33 @@
-// src/components/Header.js
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Header.css"; // Import corresponding CSS
+import "./Header.css";
 
 const Header = () => {
   return (
-    <header>
-      <div className="logo">
-        <Link to="/">Metagod</Link>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/temple-experiences">Temple Experiences</Link>
+    <header className="custom-header">
+      <nav className="header-nav">
+        <ul className="nav-links">
+          <li className="nav-item active">
+            <a href="#temple-experiences">Temple experiences</a>
           </li>
-          <li>
-            <Link to="/live-events">Live Events</Link>
+          <li className="nav-item">
+            <a href="#digital-offerings">Digital offerings</a>
           </li>
-          <li>
-            <Link to="/digital-offerings">Digital Offerings</Link>
+          <li className="nav-item">
+            <a href="#special-events">Special events</a>
           </li>
-          <li>
-            <Link to="/about-us">About Us</Link>
+          <li className="nav-item live">
+            <a href="#live">
+              Live <span className="live-indicator">●</span>
+            </a>
           </li>
-          <li>
-            <Link to="/community">Community</Link>
+          <li className="nav-item">
+            <a href="#special-experience">Special experience</a>
+          </li>
+          <li className="nav-item">
+            <a href="#digital-deities">Digital deities</a>
+          </li>
+          <li className="nav-item">
+            <a href="#meditation-arena">Meditation arena</a>
           </li>
         </ul>
       </nav>
